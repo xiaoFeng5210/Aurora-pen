@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react'
 import './App.css'
+// @ts-ignore
 import {add} from '../../dist/main.js'
 
 function App() {

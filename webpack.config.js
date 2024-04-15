@@ -13,11 +13,22 @@ module.exports = {
         // 这样就可以scripts引入 也可以require或者import引入
         library: {
             name: "aurora_pen",
-            type: "ES Module",
+            type: "umd",
         },
     },
     module: {
         rules: [
+            {
+                test: /\.js$/,
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['@babel/preset-env'],
+                        },
+                    },
+                ],
+            },
             {
                 test: /\.ts$/,
                 use: {
@@ -29,4 +40,8 @@ module.exports = {
     },
     // plugins: [new ESLintPlugin({ extensions: ['.js', '.ts'] })],
     externals: [nodeExternals()],
+    resolve: {
+        // 文件名后缀可以省略
+        extensions: ['.ts', '.js'],
+    }
 }

@@ -21,6 +21,7 @@
   "dependencies": {
     "prosemirror-schema-basic": "^1.2.2",
     "prosemirror-state": "^1.4.3",
-    "prosemirror-view": "^1.33.4"
+    "prosemirror-view": "^1.33.4",
+    "webpack-node-externals": "^3.0.0"
   }
 }

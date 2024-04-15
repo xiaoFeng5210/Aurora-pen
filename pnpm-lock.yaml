@@ -14,6 +14,9 @@ dependencies:
   prosemirror-view:
     specifier: ^1.33.4
     version: 1.33.4
+  webpack-node-externals:
+    specifier: ^3.0.0
+    version: 3.0.0
 
 devDependencies:
   '@babel/core':
@@ -3067,6 +3070,11 @@ packages:
       flat: 5.0.2
       wildcard: 2.0.1
     dev: true
+
+  /webpack-node-externals@3.0.0:
+    resolution: {integrity: sha512-LnL6Z3GGDPht/AigwRh2dvL9PQPFQ8skEpVrWZXLWBYmqcaojHNN0onvHzie6rq7EWKrrBfPYqNEzTJgiwEQDQ==}
+    engines: {node: '>=6'}
+    dev: false
 
   /webpack-sources@3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}

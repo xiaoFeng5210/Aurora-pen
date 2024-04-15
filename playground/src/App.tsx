@@ -1,11 +1,11 @@
 import {useEffect, useState} from 'react'
 import './App.css'
-import {BaseEditor} from '../../dist/main.js'
+import {add} from '../../dist/main.js'
 
 function App() {
 
   useEffect(() => {
-    console.log(BaseEditor)
+    add()
   }, []);
 
   return (

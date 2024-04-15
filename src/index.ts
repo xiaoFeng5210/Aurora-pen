@@ -1,6 +1,6 @@
-// @ts-ignore
-import BaseEditor from "./core/BaseEditor.ts";
+import BaseEditor from "./core/BaseEditor";
 
-export {
-	BaseEditor
+// export { BaseEditor };
+export const add = () => {
+	console.log("add");
 }

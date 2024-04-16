@@ -1,18 +1,17 @@
-import {useEffect, useState} from 'react'
+import {useEffect} from 'react'
 import './App.css'
 // @ts-ignore
-import {add} from '../../dist/main.js'
+import {BaseEditor} from "../../dist/main.js";
 
 function App() {
 
   useEffect(() => {
-    add()
+    console.log(new BaseEditor("editor_box"))
   }, []);
 
   return (
-    <>
-      <span>测试页面</span>
-    </>
+    <div id="editor_box">
+    </div>
   )
 }
 

@@ -4,7 +4,7 @@
   "description": "极光笔🖊️，自研富文本编辑器📒, 开个新坑。。。",
   "main": "index.js",
   "scripts": {
-    "build": "npx webpack"
+    "build": "rm -rf ./dist && npx webpack"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,9 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "prosemirror-commands": "^1.5.2",
+    "prosemirror-history": "^1.4.0",
+    "prosemirror-keymap": "^1.2.2",
     "prosemirror-schema-basic": "^1.2.2",
     "prosemirror-state": "^1.4.3",
     "prosemirror-view": "^1.33.4",
